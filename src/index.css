@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#sidebar a.active {
+    background-color: white !important;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 10px 20px 0px;
+  }
+  #sidebar a.active #active-icon {
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    color:white
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-gradient{
+    background-color: #663dff;
+background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+}
+html.light #sidebar a.active {
+  color: black;
+  /* Add any other styles you want for the active state when body has class 'light' */
+}
+html.dark #sidebar a.active {
+  color: black !important;
+  /* Add any other styles you want for the active state when body has class 'light' */
 }

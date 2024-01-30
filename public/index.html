@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en"   >
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -26,7 +26,7 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body style="background: #f8f9fa !important;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -40,4 +40,31 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // localStorage.setItem('theme','dark')
+    // document.documentElement.removeAttribute("class");
+    // document.documentElement.classList.add('dark')
+    // }else{
+    //   localStorage.setItem('theme','light')
+    //   document.documentElement.removeAttribute("class");
+    // document.documentElement.classList.add('light')
+    // }
+    // window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    // const newColorScheme = event.matches ? "dark" : "light";
+    // localStorage.setItem('theme',newColorScheme)
+    // document.documentElement.removeAttribute("class");
+    // document.documentElement.classList.add(newColorScheme)
+    // });
+    
+   
+
+// // Whenever the user explicitly chooses light mode
+
+// // Whenever the user explicitly chooses dark mode
+// localStorage.theme = 'dark'
+
+// // Whenever the user explicitly chooses to respect the OS preference
+// localStorage.removeItem('theme')
+  </script>
 </html>
